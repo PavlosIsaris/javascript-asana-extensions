@@ -44,6 +44,7 @@ window.setTimeout(function() {
 	    	$(getTemplate()).appendTo($('.scify-container')[parentId]);
 	    	$('#scify-hours').on('dragstart', function(ev){drag(ev);});
 	    	getHoursPerName();
+		checkBox();
     	}, 2000);
 }, 1000);
 
