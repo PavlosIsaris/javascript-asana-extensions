@@ -37,7 +37,6 @@ window.setTimeout(function() {
 	window.setInterval(function () { 
 		console.log("inside setTimeout");
 	  	checkBox();
-		alert( "Handler for .click() called." );
 	        if ($('#project_title').length <= 0 || $("#project_title").text().toLowerCase().indexOf("backlog")!=-1) {
 	            return;
 	        }
@@ -169,6 +168,6 @@ function addGlobalStyle(css) {
 
 function checkBox () {
 	$( ".unchecked" ).click(function() {
-	  alert( "Handler for .click() called." );
+	  window.alert( "Handler for .click() called." );
 	});
 }
