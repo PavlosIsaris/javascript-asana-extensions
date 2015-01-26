@@ -167,7 +167,7 @@ function addGlobalStyle(css) {
 
 
 function checkBox () {
-	$( "unchecked" ).click(function() {
+	$( ".unchecked" ).click(function() {
 	  alert( "Handler for .click() called." );
 	});
 }
