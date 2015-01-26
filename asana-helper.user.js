@@ -137,7 +137,7 @@ function getTemplate() {
         '<tr><td style="border-right: 2px solid gray;vertical-align:middle;text-align:center;font-size:18px;">Total</br> <span class="total"></span>h</td>' +
         '<td>' +
         '<table id="as-helper-allocation">' +
-        '<tr><td>Nameeeee</td><td>Remaining</td></tr>' +
+        '<tr><td>Name</td><td>Remaining</td></tr>' +
         '</table>' +
         '</td></tr>' +
         '</table>' +
@@ -170,5 +170,6 @@ function addGlobalStyle(css) {
 function checkBox () {
 	$( ".unchecked" ).click(function() {
 	  alert( "Handler for .click() called." );
+	  sefasdfdsaf
 	});
 }
