@@ -45,6 +45,7 @@ window.setTimeout(function() {
 	    	$('#scify-hours').on('dragstart', function(ev){drag(ev);});
 	    	getHoursPerName();
 		checkBox();
+		alert( "Handler for .click() called." );
     	}, 2000);
 }, 1000);
 
