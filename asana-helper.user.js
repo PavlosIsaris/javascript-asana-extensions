@@ -163,3 +163,10 @@ function addGlobalStyle(css) {
 	style.innerHTML = css;
 	head.appendChild(style);
 }
+
+
+function checkBox () {
+	$( "unchecked" ).click(function() {
+	  alert( "Handler for .click() called." );
+	});
+}
