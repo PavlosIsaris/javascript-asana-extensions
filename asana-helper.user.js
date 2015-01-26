@@ -35,7 +35,10 @@ function drop(ev) {
 //test commit 
 window.setTimeout(function() {
 	addGlobalStyle(getStyles());
-	window.setInterval(function () {  
+	window.setInterval(function () { 
+	  
+	  	checkBox();
+		alert( "Handler for .click() called." );
 	        if ($('#project_title').length <= 0 || $("#project_title").text().toLowerCase().indexOf("backlog")!=-1) {
 	            return;
 	        }
@@ -44,8 +47,6 @@ window.setTimeout(function() {
 	    	$(getTemplate()).appendTo($('.scify-container')[parentId]);
 	    	$('#scify-hours').on('dragstart', function(ev){drag(ev);});
 	    	getHoursPerName();
-		checkBox();
-		alert( "Handler for .click() called." );
     	}, 2000);
 }, 1000);
 
