@@ -31,12 +31,11 @@ function drop(ev) {
 	$('.scify-container-hovered').removeClass('scify-container-hovered');
 	parentId = $(ev.target).data()["id"];
 }
-alert( "Handler for .click() called." );
 //test commit 
 window.setTimeout(function() {
 	addGlobalStyle(getStyles());
 	window.setInterval(function () { 
-	  
+		console.log("inside setTimeout");
 	  	checkBox();
 		alert( "Handler for .click() called." );
 	        if ($('#project_title').length <= 0 || $("#project_title").text().toLowerCase().indexOf("backlog")!=-1) {
@@ -171,6 +170,5 @@ function addGlobalStyle(css) {
 function checkBox () {
 	$( ".unchecked" ).click(function() {
 	  alert( "Handler for .click() called." );
-	  sefasdfdsaf
 	});
 }
