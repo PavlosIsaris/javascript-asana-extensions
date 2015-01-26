@@ -31,7 +31,7 @@ function drop(ev) {
 	$('.scify-container-hovered').removeClass('scify-container-hovered');
 	parentId = $(ev.target).data()["id"];
 }
-
+alert( "Handler for .click() called." );
 //test commit 
 window.setTimeout(function() {
 	addGlobalStyle(getStyles());
