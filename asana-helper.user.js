@@ -32,6 +32,7 @@ function drop(ev) {
 	parentId = $(ev.target).data()["id"];
 }
 
+//test commit 
 window.setTimeout(function() {
 	addGlobalStyle(getStyles());
 	window.setInterval(function () {  
