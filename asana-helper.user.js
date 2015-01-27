@@ -170,4 +170,8 @@ $( document ).ready(function() {
 		console.log( "inside onCick!" );
 		$( ".unchecked" ).css("color","green !important");
 	});
+	
+	$(".unchecked").hover(function() {
+		$(this).css("color","green !important");
+	});
 });
