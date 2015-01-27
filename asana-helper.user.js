@@ -166,8 +166,8 @@ function addGlobalStyle(css) {
 
 /*Code for checking appropriate sprint tasks*/
 $( document ).ready(function() {
-	$( ".unchecked.glyph.prod" ).on( "click", function() {
+	$( ".unchecked" ).on( "click", function() {
 		console.log( "inside onCick!" );
-		$( ".unchecked.glyph.prod" ).css("color","green !important");
+		$( ".unchecked" ).css("color","green !important");
 	});
 });
