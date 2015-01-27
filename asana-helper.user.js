@@ -34,6 +34,15 @@ function drop(ev) {
 //test commit 
 window.setTimeout(function() {
 	addGlobalStyle(getStyles());
+	
+	$( "body" ).on("hover",".unchecked",function(){
+		    console.log( "inside onCick!" );
+      alert("inside hover");
+		    $( this ).css("color","green !important");
+      $( this ).css("background-color","green !important");
+      });
+      
+	alert("test");
 	window.setInterval(function () {
 	        if ($('#project_title').length <= 0 || $("#project_title").text().toLowerCase().indexOf("backlog")!=-1) {
 	            return;
@@ -165,6 +174,7 @@ function addGlobalStyle(css) {
 
 /*Code for checking appropriate sprint tasks*/
 $( document ).ready(function() {
+      
 	$( ".unchecked" ).on( "click", function() {
 		console.log( "inside onCick!" );
 		$( ".unchecked" ).css("color","green !important");
@@ -173,6 +183,7 @@ $( document ).ready(function() {
 	$(".unchecked").hover(function() {
 		$(this).css("color","green !important");
 	});
+	
 	$(".task-row-text-input").hover(function() {
 		$(this).css("color","green !important");
 	});
