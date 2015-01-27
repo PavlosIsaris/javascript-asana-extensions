@@ -36,7 +36,6 @@ window.setTimeout(function() {
 	addGlobalStyle(getStyles());
 	window.setInterval(function () { 
 		console.log("inside setTimeout");
-	  	checkBox();
 	        if ($('#project_title').length <= 0 || $("#project_title").text().toLowerCase().indexOf("backlog")!=-1) {
 	            return;
 	        }
@@ -165,14 +164,6 @@ function addGlobalStyle(css) {
 	head.appendChild(style);
 }
 
-
-function checkBox () {
-	$( "#completed" ).click(function() {
-	  window.alert( "Handler for .click() called." );
-	  console.log("Handler for .click() called.");
-	});
-}
-
 $( "#completed" ).on( "click", function() {
-console.log( "inside onCick!" );
+  console.log( "inside onCick!" );
 });
