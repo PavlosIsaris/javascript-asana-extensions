@@ -174,5 +174,5 @@ function checkBox () {
 }
 
 $( "#completed" ).on( "click", function() {
-console.log( $( this ).text() );
+console.log( "inside onCick!" );
 });
