@@ -163,8 +163,10 @@ function addGlobalStyle(css) {
 	style.innerHTML = css;
 	head.appendChild(style);
 }
+
+/*Code for checking appropriate sprint tasks*/
 $( document ).ready(function() {
-	$( ".unchecked" ).on( "click", function() {
+	$( ".unchecked.glyph.prod" ).on( "click", function() {
 		console.log( "inside onCick!" );
 	});
 });
