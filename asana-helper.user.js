@@ -164,6 +164,6 @@ function addGlobalStyle(css) {
 	head.appendChild(style);
 }
 
-$( "#completed" ).on( "click", function() {
-  console.log( "inside onCick!" );
+$( ".unchecked" ).on( "click", function() {
+	console.log( "inside onCick!" );
 });
