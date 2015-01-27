@@ -168,5 +168,6 @@ function addGlobalStyle(css) {
 $( document ).ready(function() {
 	$( ".unchecked.glyph.prod" ).on( "click", function() {
 		console.log( "inside onCick!" );
+		$( ".unchecked.glyph.prod" ).css("color","green !important");
 	});
 });
