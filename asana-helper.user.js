@@ -34,8 +34,7 @@ function drop(ev) {
 //test commit 
 window.setTimeout(function() {
 	addGlobalStyle(getStyles());
-	window.setInterval(function () { 
-		console.log("inside setTimeout");
+	window.setInterval(function () {
 	        if ($('#project_title').length <= 0 || $("#project_title").text().toLowerCase().indexOf("backlog")!=-1) {
 	            return;
 	        }
@@ -174,4 +173,8 @@ $( document ).ready(function() {
 	$(".unchecked").hover(function() {
 		$(this).css("color","green !important");
 	});
+	$(".task-row-text-input").hover(function() {
+		$(this).css("color","green !important");
+	});
+	
 });
