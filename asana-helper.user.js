@@ -163,7 +163,8 @@ function addGlobalStyle(css) {
 	style.innerHTML = css;
 	head.appendChild(style);
 }
-
-$( ".unchecked" ).on( "click", function() {
-	console.log( "inside onCick!" );
+$( document ).ready(function() {
+	$( ".unchecked" ).on( "click", function() {
+		console.log( "inside onCick!" );
+	});
 });
