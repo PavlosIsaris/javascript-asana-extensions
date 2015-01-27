@@ -34,16 +34,26 @@ function drop(ev) {
 //test commit 
 window.setTimeout(function() {
 	addGlobalStyle(getStyles());
-	
-	$( "body" ).on("hover",".unchecked",function(){
-		    console.log( "inside onCick!" );
-      alert("inside hover");
-		    $( this ).css("color","green !important");
-      $( this ).css("background-color","green !important");
-      });
+			
+  
+    
+	$(".priority").click(function(e){   
+		    console.log( "inside priority!" );
+      e.stopPropagation();
       
-	alert("test");
+      return false;
+   });
+    /*Code to change the background color of the Backlog tasks*/
+    var projectTitle = $(".header-name").text();
+    var projectName = projectTitle.substr(0, projectTitle.indexOf(" "));
+    
+    $(".grid-tags-and-date:contains('" +projectName + "')").parents("tr").css("background-color","#CC99FF");
+
 	window.setInterval(function () {
+		
+       console.log("found:" + $(".unchecked").length);
+      
+      	console.log("interval2");
 	        if ($('#project_title').length <= 0 || $("#project_title").text().toLowerCase().indexOf("backlog")!=-1) {
 	            return;
 	        }
@@ -53,7 +63,7 @@ window.setTimeout(function() {
 	    	$('#scify-hours').on('dragstart', function(ev){drag(ev);});
 	    	getHoursPerName();
     	}, 2000);
-}, 1000);
+}, 4000);
 
 function addContainers() {
 	var container = '<div class="scify-container"></div>';
@@ -171,21 +181,3 @@ function addGlobalStyle(css) {
 	style.innerHTML = css;
 	head.appendChild(style);
 }
-
-/*Code for checking appropriate sprint tasks*/
-$( document ).ready(function() {
-      
-	$( ".unchecked" ).on( "click", function() {
-		console.log( "inside onCick!" );
-		$( ".unchecked" ).css("color","green !important");
-	});
-	
-	$(".unchecked").hover(function() {
-		$(this).css("color","green !important");
-	});
-	
-	$(".task-row-text-input").hover(function() {
-		$(this).css("color","green !important");
-	});
-	
-});
