@@ -172,3 +172,7 @@ function checkBox () {
 	  console.log("Handler for .click() called.");
 	});
 }
+
+$( "#completed" ).on( "click", function() {
+console.log( $( this ).text() );
+});
